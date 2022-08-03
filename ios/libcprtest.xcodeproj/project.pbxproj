@@ -12,8 +12,9 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		70F676B928956BA500F02E61 /* libcpr.1.9.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70F676B728956BA500F02E61 /* libcpr.1.9.0.dylib */; };
-		70F676BA28956BA500F02E61 /* libcurl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70F676B828956BA500F02E61 /* libcurl.dylib */; };
+		70FFD5122899C60700D849AC /* libcpr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 70FFD50D2899C5F600D849AC /* libcpr.a */; };
+		70FFD5132899C60700D849AC /* libcurl-d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 70FFD50F2899C5F600D849AC /* libcurl-d.a */; };
+		70FFD5142899C60700D849AC /* libz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 70FFD5112899C5F600D849AC /* libz.a */; };
 		7699B88040F8A987B510C191 /* libPods-libcprtest-libcprtestTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-libcprtest-libcprtestTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -25,6 +26,27 @@
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
 			remoteInfo = libcprtest;
+		};
+		70FFD50C2899C5F600D849AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70FFD5022899C5F600D849AC /* cpr.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BCDD6D7978C249DABF58E5C2;
+			remoteInfo = cpr;
+		};
+		70FFD50E2899C5F600D849AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70FFD5022899C5F600D849AC /* cpr.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D5C20D4C722842D682FBD098;
+			remoteInfo = libcurl;
+		};
+		70FFD5102899C5F600D849AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70FFD5022899C5F600D849AC /* cpr.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DE017C1E9ABA409B864D7488;
+			remoteInfo = zlib;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -43,8 +65,7 @@
 		5709B34CF0A7D63546082F79 /* Pods-libcprtest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-libcprtest.release.xcconfig"; path = "Target Support Files/Pods-libcprtest/Pods-libcprtest.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-libcprtest-libcprtestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-libcprtest-libcprtestTests.debug.xcconfig"; path = "Target Support Files/Pods-libcprtest-libcprtestTests/Pods-libcprtest-libcprtestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-libcprtest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-libcprtest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		70F676B728956BA500F02E61 /* libcpr.1.9.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libcpr.1.9.0.dylib; sourceTree = "<group>"; };
-		70F676B828956BA500F02E61 /* libcurl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libcurl.dylib; sourceTree = "<group>"; };
+		70FFD5022899C5F600D849AC /* cpr.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cpr.xcodeproj; path = ../../cpr/build/cpr.xcodeproj; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = libcprtest/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-libcprtest-libcprtestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-libcprtest-libcprtestTests.release.xcconfig"; path = "Target Support Files/Pods-libcprtest-libcprtestTests/Pods-libcprtest-libcprtestTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -63,9 +84,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70F676B928956BA500F02E61 /* libcpr.1.9.0.dylib in Frameworks */,
+				70FFD5122899C60700D849AC /* libcpr.a in Frameworks */,
+				70FFD5132899C60700D849AC /* libcurl-d.a in Frameworks */,
+				70FFD5142899C60700D849AC /* libz.a in Frameworks */,
 				0C80B921A6F3F58F76C31292 /* libPods-libcprtest.a in Frameworks */,
-				70F676BA28956BA500F02E61 /* libcurl.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,15 +137,24 @@
 		70F676BB2895B7F200F02E61 /* Externals */ = {
 			isa = PBXGroup;
 			children = (
+				70FFD5022899C5F600D849AC /* cpr.xcodeproj */,
 			);
 			path = Externals;
+			sourceTree = "<group>";
+		};
+		70FFD5032899C5F600D849AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				70FFD50D2899C5F600D849AC /* libcpr.a */,
+				70FFD50F2899C5F600D849AC /* libcurl-d.a */,
+				70FFD5112899C5F600D849AC /* libz.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				70F676B728956BA500F02E61 /* libcpr.1.9.0.dylib */,
-				70F676B828956BA500F02E61 /* libcurl.dylib */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -238,6 +269,12 @@
 			mainGroup = 83CBB9F61A601CBA00E9B192;
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 70FFD5032899C5F600D849AC /* Products */;
+					ProjectRef = 70FFD5022899C5F600D849AC /* cpr.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				13B07F861A680F5B00A75B9A /* libcprtest */,
@@ -245,6 +282,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		70FFD50D2899C5F600D849AC /* libcpr.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libcpr.a;
+			remoteRef = 70FFD50C2899C5F600D849AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		70FFD50F2899C5F600D849AC /* libcurl-d.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libcurl-d.a";
+			remoteRef = 70FFD50E2899C5F600D849AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		70FFD5112899C5F600D849AC /* libz.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libz.a;
+			remoteRef = 70FFD5102899C5F600D849AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		00E356EC1AD99517003FC87E /* Resources */ = {
@@ -502,7 +563,49 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 24CMR7378R;
 				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/CocoaAsyncSocket\"",
+					"\"${PODS_ROOT}/Headers/Public/DoubleConversion\"",
+					"\"${PODS_ROOT}/Headers/Public/FBLazyVector\"",
+					"\"${PODS_ROOT}/Headers/Public/Flipper\"",
+					"\"${PODS_ROOT}/Headers/Public/Flipper-Fmt\"",
+					"\"${PODS_ROOT}/Headers/Public/Flipper-Folly\"",
+					"\"${PODS_ROOT}/Headers/Public/Flipper-PeerTalk\"",
+					"\"${PODS_ROOT}/Headers/Public/Flipper-RSocket\"",
+					"\"${PODS_ROOT}/Headers/Public/FlipperKit\"",
+					"\"${PODS_ROOT}/Headers/Public/RCT-Folly\"",
+					"\"${PODS_ROOT}/Headers/Public/RCTRequired\"",
+					"\"${PODS_ROOT}/Headers/Public/RCTTypeSafety\"",
+					"\"${PODS_ROOT}/Headers/Public/React-Codegen\"",
+					"\"${PODS_ROOT}/Headers/Public/React-Core\"",
+					"\"${PODS_ROOT}/Headers/Public/React-RCTAnimation\"",
+					"\"${PODS_ROOT}/Headers/Public/React-RCTBlob\"",
+					"\"${PODS_ROOT}/Headers/Public/React-RCTText\"",
+					"\"${PODS_ROOT}/Headers/Public/React-bridging\"",
+					"\"${PODS_ROOT}/Headers/Public/React-callinvoker\"",
+					"\"${PODS_ROOT}/Headers/Public/React-cxxreact\"",
+					"\"${PODS_ROOT}/Headers/Public/React-jsi\"",
+					"\"${PODS_ROOT}/Headers/Public/React-jsiexecutor\"",
+					"\"${PODS_ROOT}/Headers/Public/React-jsinspector\"",
+					"\"${PODS_ROOT}/Headers/Public/React-logger\"",
+					"\"${PODS_ROOT}/Headers/Public/React-perflogger\"",
+					"\"${PODS_ROOT}/Headers/Public/React-runtimeexecutor\"",
+					"\"${PODS_ROOT}/Headers/Public/ReactCommon\"",
+					"\"${PODS_ROOT}/Headers/Public/SocketRocket\"",
+					"\"${PODS_ROOT}/Headers/Public/Yoga\"",
+					"\"${PODS_ROOT}/Headers/Public/YogaKit\"",
+					"\"${PODS_ROOT}/Headers/Public/fmt\"",
+					"\"${PODS_ROOT}/Headers/Public/glog\"",
+					"\"${PODS_ROOT}/Headers/Public/libevent\"",
+					"\"$(PODS_ROOT)/DoubleConversion\"",
+					"\"$(PODS_ROOT)/boost\"",
+					"\"$(PODS_ROOT)/Headers/Private/React-Core\"",
+					"\"$(PODS_TARGET_SRCROOT)/include/\"",
+				);
 				INFOPLIST_FILE = libcprtest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -511,6 +614,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Externals",
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -521,7 +625,6 @@
 				PRODUCT_NAME = libcprtest;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				USER_HEADER_SEARCH_PATHS = "Externals/**";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -533,6 +636,48 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 24CMR7378R;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/CocoaAsyncSocket\"",
+					"\"${PODS_ROOT}/Headers/Public/DoubleConversion\"",
+					"\"${PODS_ROOT}/Headers/Public/FBLazyVector\"",
+					"\"${PODS_ROOT}/Headers/Public/Flipper\"",
+					"\"${PODS_ROOT}/Headers/Public/Flipper-Fmt\"",
+					"\"${PODS_ROOT}/Headers/Public/Flipper-Folly\"",
+					"\"${PODS_ROOT}/Headers/Public/Flipper-PeerTalk\"",
+					"\"${PODS_ROOT}/Headers/Public/Flipper-RSocket\"",
+					"\"${PODS_ROOT}/Headers/Public/FlipperKit\"",
+					"\"${PODS_ROOT}/Headers/Public/RCT-Folly\"",
+					"\"${PODS_ROOT}/Headers/Public/RCTRequired\"",
+					"\"${PODS_ROOT}/Headers/Public/RCTTypeSafety\"",
+					"\"${PODS_ROOT}/Headers/Public/React-Codegen\"",
+					"\"${PODS_ROOT}/Headers/Public/React-Core\"",
+					"\"${PODS_ROOT}/Headers/Public/React-RCTAnimation\"",
+					"\"${PODS_ROOT}/Headers/Public/React-RCTBlob\"",
+					"\"${PODS_ROOT}/Headers/Public/React-RCTText\"",
+					"\"${PODS_ROOT}/Headers/Public/React-bridging\"",
+					"\"${PODS_ROOT}/Headers/Public/React-callinvoker\"",
+					"\"${PODS_ROOT}/Headers/Public/React-cxxreact\"",
+					"\"${PODS_ROOT}/Headers/Public/React-jsi\"",
+					"\"${PODS_ROOT}/Headers/Public/React-jsiexecutor\"",
+					"\"${PODS_ROOT}/Headers/Public/React-jsinspector\"",
+					"\"${PODS_ROOT}/Headers/Public/React-logger\"",
+					"\"${PODS_ROOT}/Headers/Public/React-perflogger\"",
+					"\"${PODS_ROOT}/Headers/Public/React-runtimeexecutor\"",
+					"\"${PODS_ROOT}/Headers/Public/ReactCommon\"",
+					"\"${PODS_ROOT}/Headers/Public/SocketRocket\"",
+					"\"${PODS_ROOT}/Headers/Public/Yoga\"",
+					"\"${PODS_ROOT}/Headers/Public/YogaKit\"",
+					"\"${PODS_ROOT}/Headers/Public/fmt\"",
+					"\"${PODS_ROOT}/Headers/Public/glog\"",
+					"\"${PODS_ROOT}/Headers/Public/libevent\"",
+					"\"$(PODS_ROOT)/DoubleConversion\"",
+					"\"$(PODS_ROOT)/boost\"",
+					"\"$(PODS_ROOT)/Headers/Private/React-Core\"",
+					"\"$(PODS_TARGET_SRCROOT)/include/\"",
+				);
 				INFOPLIST_FILE = libcprtest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -541,6 +686,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Externals",
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -550,7 +696,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = libcprtest;
 				SWIFT_VERSION = 5.0;
-				USER_HEADER_SEARCH_PATHS = "Externals/**";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
