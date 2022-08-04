@@ -6,7 +6,8 @@
 
 #import <React/RCTAppSetupUtils.h>
 
-#import "cpr/cpr.h"
+#import <cpr/cpr.h>
+#import <iostream>
 
 #if RCT_NEW_ARCH_ENABLED
 #import <React/CoreModulesPlugins.h>
@@ -59,6 +60,9 @@ static NSString *const kRNConcurrentRoot = @"concurrentRoot";
   rootViewController.view = rootView;
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
+
+  cpr::Response r = cpr::Get(cpr::Url{"https://reqres.in/api/users?page=2"});
+  std::cout << r.status_code << std::endl;
   return YES;
 }
 
